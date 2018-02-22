@@ -1,0 +1,35 @@
+{
+  "name": "neo-https-proxy",
+  "version": "1.0.0",
+  "description": "Interacting with NEO HTTP seeds over HTTPS. Webtask backend and a client helper script to interact with the RPC.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client:build": "npx babel src/client/queryHttpsProxy.js --presets=@babel/preset-env --out-file ./client/queryHttpsProxy.js"
+  },
+  "main": "client/queryHttpsProxy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/be-neo/neo-https-proxy.git"
+  },
+  "keywords": [
+    "NEO",
+    "Blockchain",
+    "Webtask",
+    "Auth0",
+    "Serverless",
+    "Decentralized",
+    "Javascript",
+    "Nodejs"
+  ],
+  "author": "Jeroen Peeters @ be-neo <contact@jeroenpeeters.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/be-neo/neo-https-proxy/issues"
+  },
+  "homepage": "https://github.com/be-neo/neo-https-proxy#readme",
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40"
+  }
+}
